@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://store.steampowered.com/">
+          <img
+            class="logo-img"
+            src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+            alt="steam-logo"
+          />
+        </a>
+      </div>
+
+      <div class="nav-main">
+        <div class="nav-bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a class="nav-item" href="https://store.steampowered.com/">Store</a>
+          </li>
+          <li>
+            <a class="nav-item" href="https://steamcommunity.com/">Community</a>
+          </li>
+          <li>
+            <a class="nav-item" href="https://store.steampowered.com/about/"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="nav-item" href="https://help.steampowered.com/en/"
+              >Support</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="toggle" onclick="toggle()"></div> -->
+    </header>
+    <main>
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <div class="search-box">
+            <input
+              type="text"
+              name="search"
+              id="search-input"
+              placeholder="search"
+            />
+            <span id="search-icon">&#128269;</span>
+            <!-- <img
+                      src=""
+                      alt=""
+                    /> -->
+          </div>
+          <div class="category">
+            <div class="category-list">
+              <ul>
+                <li id="action" onclick="displayGamesOfGenre('action')">
+                  Action
+                </li>
+                <li id="rpg" onclick="displayGamesOfGenre('rpg')">RPG</li>
+                <li id="strategy" onclick="displayGamesOfGenre('strategy')">
+                  Strategy
+                </li>
+                <li id="adventure" onclick="displayGamesOfGenre('adventure')">
+                  Adventure
+                </li>
+                <li id="sports" onclick="displayGamesOfGenre('sports')">
+                  Sports
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="game-list"></div>
+      <div id="game-detail-container"></div>
+    </main>
+
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
